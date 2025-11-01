@@ -112,7 +112,7 @@ app.use("/api/bills", billRoutes);
 
 // Default route
 app.get("/", (req, res) => {
-  res.send("💸 Digital Wallet API running with Socket.IO!");
+  res.send(" Digital Wallet API running with Socket.IO!");
 });
 
 // ✅ Socket.io connection
@@ -131,7 +131,7 @@ io.on("connection", (socket) => {
 // Start server
 const PORT = process.env.PORT || 5000;
 httpServer.listen(PORT, () =>
-  console.log(`🚀 Server running on http://localhost:${PORT}`)
+  console.log(`Server running on http://localhost:${PORT}`)
 );
 
 export default app;
